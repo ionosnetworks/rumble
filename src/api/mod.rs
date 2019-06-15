@@ -171,6 +171,8 @@ pub struct PeripheralProperties {
     pub discovery_count: u32,
     /// True if we've discovered the device before
     pub has_scan_response: bool,
+    /// 128-bit Service Data
+    pub service_data_128: Option<([u8; 16], Vec<u8>)>
 }
 
 /// Peripheral is the device that you would like to communicate with (the "server" of BLE). This
